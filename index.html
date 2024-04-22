@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css?_v=20240423013128' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.min.css?_v=20240423013128">
+    <title>Resume</title>
+</head>
+
+<body>
+	<div class="wrapper wrapper__container">
+		<header class="header">
+    <a class="header__logo" href="">
+    </a>
+    <nav class="header__nav">
+        <ul class="header__list" data-links-list>
+            <li class="header__item">
+                <a class="header__link active" data-link="1" href="">
+                    <i class='bx bxs-home'></i>
+                </a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" data-link="2" href="">
+                    <i class='bx bx-book' ></i>
+                </a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" data-link="3" href="">
+                    <i class='bx bxs-contact' ></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="header__theme">
+        <button class="header__theme-btn" data-theme>
+            <span class="header__theme-item">
+                <i class='bx bx-sun light' ></i>
+                <i class='bx bx-moon dark' ></i>
+            </span>
+        </button>
+    </div>
+</header>
+        <div class="main-wrapper">
+            <header class="header-lite">
+                <div class="header-lite__menu">
+                    <button data-popup-link="1" class="header-lite__menu-btn">
+                        <i class='bx bx-menu-alt-left' ></i>
+                    </button>
+                </div>
+                <div class="header-lite__nav">
+                    <ul class="header-lite__list" data-links-list>
+                        <li class="header-lite__item">
+                            <a class="header-lite__link active" data-link="1" href="">
+                                <i class='bx bxs-home'></i>
+                            </a>
+                        </li>
+                        <li class="header-lite__item">
+                            <a class="header-lite__link" data-link="2" href="">
+                                <i class='bx bx-book' ></i>
+                            </a>
+                        </li>
+                        <li class="header-lite__item">
+                            <a class="header-lite__link" data-link="3" href="">
+                                <i class='bx bxs-contact' ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-lite__theme">
+                    <button class="header-lite__theme-btn" data-theme>
+                        <span class="header-lite__theme-item">
+                            <i class='bx bx-sun light' ></i>
+                            <i class='bx bx-moon dark' ></i>
+                        </span>
+                    </button>
+                </div>
+            </header>
+            <main class="main" data-blocks-list>
+                <div class="main__burger-menu">
+                    <button class="main__burger-btn" data-popup-link="1">
+                        <i class='bx bx-menu-alt-left' ></i>
+                    </button>
+                </div>
+                <section class="home block active" data-block="1">
+                    <div class="home__content">
+                        <h1 class="home__title title">Створюю якісну продукцію, яка радує око користувача</h1>
+                        <p class="home__text">Писати якісний код - моє хобі, особливо коли він перетворюється на красивий, адаптивний 
+                            веб-сайт з яскравими анімаціями, який просто захоплює своєю красою та функціональністю.
+                        </p>
+                        <div class="home__buttons" data-links-list>
+                            <button class="home__btn button" data-link="3">Зв'язатися зі мною</button>
+                            <button class="home__btn button-border" data-link="2">Резюме</button> 
+                            <div data-link="1"></div>
+                        </div>
+                    </div>
+                    <div class="home__media">
+                        <img src="img/home.jpg" alt="image" />
+                    </div>
+                </section>
+                <section class="about block" data-block="2">
+                    <div class="about__media">
+                        <img src="img/about.jpg" alt="image" />
+                    </div>
+                    <div class="about__content">
+                        <h2 class="about__title title">Про мене</h2>
+                        <p class="about__text">Маю трирічний досвід у вивченні та розробці веб-сайтів, що стало 
+                            моїм великим захопленням. Мою увагу найбільше привертає розробка з використанням 
+                            бібліотеки React, проте я також активно використовую й інші технології. Постійно 
+                            прагну поглиблювати свої знання, вивчаючи нові технології та методики. Моє головне 
+                            прагнення - досягнення високої якості в кожному аспекті моєї роботи.</p>
+                    </div>
+                </section>
+                <section class="contact block" data-block="3">  
+                    <div class="contact__content">
+                        <h2 class="contact__title title">Зв'язатися зі мною</h2>
+                        <form class="contact__form">
+                            <div class="contact__row">
+                                <label class="contact__label" for="name">Ім'я:</label>
+                                <input class="contact__input input" name="name" id="name" type="text"/>
+                            </div>
+                            <div class="contact__row">
+                                <label class="contact__label" for="email">Пошта:</label>
+                                <input class="contact__input input" name="email" id="email" type="email"/>
+                            </div>
+                            <div class="contact__row">
+                                <label class="contact__label" for="text">Повідомлення:</label>
+                                <textarea class="contact__textarea textarea" name="text" id="text" cols="30" rows="5"></textarea>
+                            </div> 
+                            <button class="contact__submit button">Відправити</button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+		<aside class="aside" data-popup="1">
+    <button class="aside__close" data-popup-exit="1"><i class='bx bx-x'></i></button>
+    <div class="aside__ava">
+        <span class="aside__image">
+            <img src="img/ava.jpg" alt="Ava" />
+        </span>
+    </div>
+    <h3 class="aside__title">Кірков Олександр</h3>
+    <div class="aside__flag">
+        <span class="aside__flag-text">Frontend developer</span>
+    </div>
+    <div class="aside__contacts">
+        <ul class="aside__list">
+            <li class="aside__item">
+                <a class="aside__link" href="https://t.me/im_coderrr">
+                    <i class='bx bxl-telegram'></i>
+                </a>
+            </li>
+            <li class="aside__item">
+                <a class="aside__link" href="https://www.linkedin.com/in/олександр-кірков-b41704246">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+            </li>
+            <li class="aside__item">
+                <a class="aside__link" href="https://github.com/Olecsandr009">
+                    <i class='bx bxl-github' ></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="aside__info">
+        <ul class="aside__info-list">
+            <li class="aside__info-item">
+                <h4 class="aside__info-title">Email</h4>
+                <div class="aside__info-wrapper">
+                    <span class="aside__info-value">kirkovsasha009@gmail.com</span>
+                    <span class="aside__info-value-hover">kirkovsasha009@gmail.com</span>
+                </div>
+            </li>
+            <li class="aside__info-item">
+                <h4 class="aside__info-title">Phone</h4>
+                <span class="aside__info-value">+38 (098) 43 765 13</span>
+            </li>
+            <li class="aside__info-item">
+                <h4 class="aside__info-title">City</h4>
+                <span class="aside__info-value">Kyiv</span>
+            </li>
+            <li class="aside__info-item">
+                <h4 class="aside__info-title">Age</h4>
+                <span class="aside__info-value">19</span>
+            </li>
+            <li class="aside__info-item">
+                <h4 class="aside__info-title">Language</h4>
+                <span class="aside__info-value">Ukrainian, English</span>
+            </li>
+        </ul>
+    </div>
+    <!-- <div class="aside__skills">
+        <ul class="aside__skill-list">
+            <li class="aside__skill-item">
+                <div class="aside__skill-info">
+                    <h4 class="aside__skill-title">JS</h4>
+                    <span class="aside__skill-value">95%</span>
+                </div>
+                <div class="aside__skill-line">
+                    <span class="aside__skill-percent" style="width: 95%;"></span>
+                </div>
+            </li>
+            <li class="aside__skill-item">
+                <div class="aside__skill-info">
+                    <h4 class="aside__skill-title">HTML</h4>
+                    <span class="aside__skill-value">78%</span>
+                </div>
+                <div class="aside__skill-line">
+                    <span class="aside__skill-percent" style="width: 78%;"></span>
+                </div>
+            </li>
+            <li class="aside__skill-item">
+                <div class="aside__skill-info">
+                    <h4 class="aside__skill-title">CSS</h4>
+                    <span class="aside__skill-value">56%</span>
+                </div>
+                <div class="aside__skill-line">
+                    <span class="aside__skill-percent" style="width: 56%;"></span>
+                </div>
+            </li>
+        </ul>
+    </div> -->
+    <div class="aside__technologies">
+        <p class="aside__technology">HTML</p>
+        <p class="aside__technology">JS</p>
+        <p class="aside__technology">React</p>
+        <p class="aside__technology">React Native</p>
+        <p class="aside__technology">Axios</p>
+        <p class="aside__technology">Next</p>
+        <p class="aside__technology">Nest</p>
+        <p class="aside__technology">Angular</p>
+        <p class="aside__technology">Gulp</p>
+        <p class="aside__technology">CSS</p>
+        <p class="aside__technology">Sass</p>
+        <p class="aside__technology">SCSS</p>
+        <p class="aside__technology">C++</p>
+        <p class="aside__technology">C#</p>
+        <p class="aside__technology">Python</p>
+        <p class="aside__technology">Django</p>
+    </div>
+</aside>
+        <div class="shadow" data-popup-shadow="1"></div>
+	</div>
+
+	<script src="js/app.min.js?_v=20240423013128"></script>
+</body>
+
+</html>
